@@ -27,5 +27,4 @@ export default tseslint.config(
       'react/no-unescaped-entities': 'off' // disables warnings for contractions/apostrophes
     },
     },
-  },
 )
