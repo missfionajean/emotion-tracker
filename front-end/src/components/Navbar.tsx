@@ -2,7 +2,12 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
-function Navbar() {
+interface NavbarProps { // declaring setPage as a function with type string and it wont return anything (void)
+    setPage: (page: string) => void;
+}
+
+function Navbar({ setPage }: NavbarProps) {
+
 	return (
 		<>
 			{/* feed, main content */}
@@ -17,9 +22,9 @@ function Navbar() {
                     data-bs-toggle="offcanvas"
                     data-bs-target="#sidebar"
                 >
-                    <span className="navbar-toggler-icon"></span>
+                    <span className="navbar-toggler-icon"></span> {/* hamburger button */}
                 </button>
-                <h3>Emotion Tracker</h3>
+                <h3 style={{justifySelf: "center"}}>Emotion Tracker</h3>
             </nav>
 
 
@@ -45,9 +50,9 @@ function Navbar() {
 					></button>
 				</div>
 				<div className="offcanvas-body">
-					<h5>Home</h5>
-					<h5>My Profile</h5>
-					<h5>Sign In</h5>
+					<h5 onClick={() => setPage("Home")}>Home</h5>
+					<h5 onClick={() => setPage("MyProfile")}>My Profile</h5>
+					<h5 onClick={() => setPage("SignIn")}>Sign In</h5>
 				</div>
 			</div>
 		</>
