@@ -6,6 +6,9 @@ import MyProfile from "./components/MyProfile";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
 
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+
 function App() {
 //   const [count, setCount] = useState(0)
 

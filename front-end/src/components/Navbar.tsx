@@ -1,6 +1,4 @@
 // import { useState } from 'react'
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 interface NavbarProps { // declaring setPage as a function with type string and it wont return anything (void)
     setPage: (page: string) => void;
@@ -15,7 +13,7 @@ function Navbar({ setPage }: NavbarProps) {
 			{/* sign in - links to signup */}
 
             {/* sticky top bar */}
-            <nav className="navbar navbar-expand-lq bd-navbar fixed-top p-2 bg-primary">
+            <nav className="navbar bd-navbar fixed-top p-2 bg-primary">
                 <button
                     className="btn"
                     type="button"
@@ -50,9 +48,9 @@ function Navbar({ setPage }: NavbarProps) {
 					></button>
 				</div>
 				<div className="offcanvas-body">
-					<h5 onClick={() => setPage("Home")}>Home</h5>
-					<h5 onClick={() => setPage("MyProfile")}>My Profile</h5>
-					<h5 onClick={() => setPage("SignIn")}>Sign In</h5>
+					<h5 data-bs-dismiss="offcanvas" onClick={() => setPage("Home")}>Home</h5>
+					<h5 data-bs-dismiss="offcanvas" onClick={() => setPage("MyProfile")}>My Profile</h5>
+					<h5 data-bs-dismiss="offcanvas" onClick={() => setPage("SignIn")}>Sign In</h5>
 				</div>
 			</div>
 		</>
