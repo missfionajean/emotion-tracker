@@ -13,7 +13,7 @@ function Navbar({ setPage }: NavbarProps) {
 			{/* sign in - links to signup */}
 
             {/* sticky top bar */}
-            <nav className="navbar bd-navbar fixed-top p-2 bg-primary">
+            <nav className="navbar bd-navbar fixed-top p-2 bg-info">
                 <button
                     className="btn"
                     type="button"
@@ -22,7 +22,7 @@ function Navbar({ setPage }: NavbarProps) {
                 >
                     <span className="navbar-toggler-icon"></span> {/* hamburger button */}
                 </button>
-                <h3 style={{justifySelf: "center"}}>Emotion Tracker</h3>
+                <h3 className="pe-3 pt-1">eMotion</h3>
             </nav>
 
 

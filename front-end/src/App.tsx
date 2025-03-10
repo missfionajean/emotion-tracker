@@ -18,7 +18,7 @@ function App() {
   return (
     <div className="container-fluid">
         <Navbar setPage={setPage} />
-        <div className="m-4">
+        <div className="">
           { page === "Home" ? <Home /> : ""}
           { page === "MyProfile" ? <MyProfile /> : ""}
           { page === "SignIn" ? <SignIn setPage={setPage}/> : ""}
