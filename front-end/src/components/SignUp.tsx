@@ -8,8 +8,8 @@ interface SignUpProps {
 function SignUp({ setPage }: SignUpProps) {
 
     return (
-        <div className="w-100 container row align-items-start">
-            <section className="col">
+        <div className="row">
+            <section className="col navshift">
                 <h1>Sign Up</h1>
                 <form action="/auth/sign-up" method="POST"> {/* this will be updated to the correct path */}
                 <div className="form-group">
@@ -55,7 +55,7 @@ function SignUp({ setPage }: SignUpProps) {
                 </div>
             </section>
 
-            <section className="col">
+            <section className="col bg-light navshift">
                 <Promo />
             </section>
         </div>

@@ -25,12 +25,11 @@ a:hover {
 }
 
 body {
-  /* margin: 0; */
-  padding-top: 70px;
-  display: flex;
-  /* place-items: center; */
-  min-width: 320px;
   min-height: 100vh;
+}
+
+.navshift {
+    padding-top: 70px;
 }
 
 h1 {
