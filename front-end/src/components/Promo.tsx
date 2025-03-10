@@ -24,7 +24,7 @@ const content: PromoContent[] = [
 
 const Promo = () => {
     return (
-        <>
+        <div>
             <ul className="list-unstyled">
                 {content.map((item, index) => (
                     <div className="contentList" key={index}>
@@ -40,7 +40,7 @@ const Promo = () => {
                     </div>
                 ))}
             </ul>
-        </>
+        </div>
     );
 };
 

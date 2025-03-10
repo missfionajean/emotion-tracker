@@ -7,8 +7,8 @@ interface SignInProps { // declaring setPage as a function with type string and 
 
 function SignIn({ setPage }: SignInProps) {
     return (
-        <div className="row align-items-start">
-            <section className="col">
+        <div className="row">
+            <section className="col navshift">
                 <h1>Sign In To Account</h1>
                 <form action="/auth/sign-in" method="POST">
                     <div className="form-group">
@@ -43,7 +43,7 @@ function SignIn({ setPage }: SignInProps) {
                 </div>
             </section>
 
-            <section className="col">
+            <section className="col bg-light navshift">
                 <Promo />
             </section>
         </div>
