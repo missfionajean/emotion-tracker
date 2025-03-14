@@ -1,7 +1,7 @@
 // declares all require values for emotion palette
 type Emotion = "depressed" | "pessimistic" | "sad" | "upset" | "angry" | "irritable" | "tense" | "nervous" | "excited" | "optimistic" | "happy" | "content" | "relaxed" | "calm" | "bored" | "gloomy"
 
-type Color = `#${string}`;
+type Color = `#${string}`
 
 // Record ensures that all emotions are present and all values are strings (hex codes)
 const ePalette: Record<Emotion, Color> = {
