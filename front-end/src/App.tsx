@@ -5,6 +5,7 @@ import Home from "./components/Home";
 import MyProfile from "./components/MyProfile";
 import SignIn from "./components/SignIn";
 import SignUp from "./components/SignUp";
+import CalTest from "./components/CalTest";
 // import Promo from "./components/Promo";
 
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -24,7 +25,7 @@ function App() {
           { page === "MyProfile" ? <MyProfile /> : ""}
           { page === "SignIn" ? <SignIn setPage={setPage}/> : ""}
           { page === "SignUp" ? <SignUp setPage={setPage}/>: ""}
-          {/* { page === "SignUp" ? <Promo />: ""} */}
+          { page === "CalTest" ? <CalTest />: ""}
         </div>
     </div>
   )

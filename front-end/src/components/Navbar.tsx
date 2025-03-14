@@ -51,6 +51,7 @@ function Navbar({ setPage }: NavbarProps) {
 					<h5 data-bs-dismiss="offcanvas" onClick={() => setPage("Home")}>Home</h5>
 					<h5 data-bs-dismiss="offcanvas" onClick={() => setPage("MyProfile")}>My Profile</h5>
 					<h5 data-bs-dismiss="offcanvas" onClick={() => setPage("SignIn")}>Sign In</h5>
+                    <h5 data-bs-dismiss="offcanvas" onClick={() => setPage("CalTest")}>Calendar Test</h5>
 				</div>
 			</div>
 		</>
